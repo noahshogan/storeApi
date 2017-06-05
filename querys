@@ -1,0 +1,16 @@
+
+INSERT INTO Users (firstname, lastname, pword, email)
+VALUES ('yoni', 'cohen', '123456', 'yonicohen@gmail.com');
+
+INSERT INTO Products ([productName], [productSupplierId], [productPrice], [productCategoryId])
+VALUES ('bit', '1', '15', '1');
+
+CREATE TABLE Users (
+id INT IDENTITY  PRIMARY KEY,
+firstname NCHAR(20) NOT NULL,
+lastname NCHAR(20) NOT NULL,
+username NCHAR(20) NULL,
+pword NCHAR(20) NOT NULL,
+email NCHAR(20) NOT NULL,
+    [managerlvl] INT NOT NULL DEFAULT 0
+)
