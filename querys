@@ -2,8 +2,13 @@
 INSERT INTO Users (firstname, lastname, pword, email)
 VALUES ('yoni', 'cohen', '123456', 'yonicohen@gmail.com');
 
-INSERT INTO Products ([productName], [productSupplierId], [productPrice], [productCategoryId])
-VALUES ('bit', '1', '15', '1');
+INSERT INTO Products ([productName], [productSupplierId], [productPrice], [productCategoryId]) VALUES ('bit', '1', '15', '1');
+
+delete from Products where productName='soda3'
+
+INSERT INTO Suppliers ([supplierName]) VALUES ('clali')
+
+INSERT INTO Categorys ([categoryName]) VALUES ('clali')
 
 CREATE TABLE Users (
 id INT IDENTITY  PRIMARY KEY,

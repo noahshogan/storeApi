@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require('DBUtils');
+var db = require('../server.js');
 
 
 /* GET users listing. */
@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.post('/login', function(req,res){
     var username = req.body.username;
     var password = req.body.password;
-    db.search("SELECT * FROM Users WHERE username = '" + username  + "' AND pword = " + password + "",function (jsonObj) {
+    db.search("",function (jsonObj) {
         console.log(jsonObj);
     });
     // res.send("check this user name");

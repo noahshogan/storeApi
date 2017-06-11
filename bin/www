@@ -80,13 +80,7 @@ function onError(error) {
 /**
  * Event listener for HTTP server "listening" event.
  */
-var config = {
-    userName: 'NoahShogan',
-    password: 'iS5gumjx',
-    server: 'shogan.database.windows.net',
-    //requestTimeout: 30000,
-    options: {encrypt: true, database: 'store'}
-}
+
 function onListening() {
   var addr = server.address();
   var bind = typeof addr === 'string'
